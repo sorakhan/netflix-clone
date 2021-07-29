@@ -1,0 +1,53 @@
+.banner {
+  background-size: cover;
+  object-fit: contain;
+  height: 710px;
+  /* position: absolute; */
+  /* z-index: -1; */
+  /* top: 0; */
+  /* margin-top: 0; */
+}
+
+.banner__content {
+  padding-top: 15rem;
+  padding-left: 4rem;
+  width: 28rem;
+  /* position: relative; */
+}
+
+.banner__title {
+  font-size: 5vw;
+  margin: 0;
+}
+
+.banner__blurb {
+  font-size: 1.4vw;
+  margin-bottom: 1.5rem;
+}
+
+.banner__buttons button {
+  border-radius: 4px;
+  padding: 0.8rem 2.4rem;
+  margin-right: 0.8rem;
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.button__play {
+  background-color: white;
+  color: black;
+}
+
+.button__info {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.button__play:hover {
+  background-color: #f4f4f4;
+}
+
+.button__info:hover {
+  background-color: rgba(109, 109, 110, 0.5);
+}

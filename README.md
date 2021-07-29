@@ -1,5 +1,23 @@
 # Netflix Clone
 
+Learning React JS.
+
+- https://www.themoviedb.org/
+
+- [x] Build the Navbar
+  - [ ] Complete Navbar with icons and everything
+  - [ ] Make Navbar slightly transparent
+    - [ ] Then make opaque on scroll
+- [x] Create Banner section
+- [x] Create Rows
+  - [x] Get movies
+  - [x] Display movies
+  - [x] Display titles
+- [ ] Make hover transitions smooth
+- [ ] Add Top 10 section with numbers?
+- [ ] Hover movie preview
+- [ ] Install icons and add them where required
+
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

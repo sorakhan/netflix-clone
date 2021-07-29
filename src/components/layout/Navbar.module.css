@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #141414;
+  position: fixed;
+  top: 0;
+  height: 68px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  object-fit: contain;
+  width: 6rem;
+  margin-left: 3rem;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+.navbar__userControls {
+  margin-right: 3rem;
+}
+
+ul li {
+  display: inline;
+  margin-right: 1rem;
+}
