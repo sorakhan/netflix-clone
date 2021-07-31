@@ -17,6 +17,7 @@ Learning React JS.
 - [ ] Add Top 10 section with numbers?
 - [ ] Hover movie preview
 - [x] Install icons and add them where required
+- [x] Add banner bottom fade
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -45,10 +45,7 @@ function Banner() {
           </button>
         </div>
       </div>
-      {/* Hugo photo at the back */}
-      {/* Logo / title */}
-      {/* Blurb */}
-      {/* Buttons (play icon, Play) && ( icon, More info) */}
+      <div className={style.banner__bottom}></div>
     </header>
   );
 }

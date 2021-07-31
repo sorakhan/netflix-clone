@@ -1,10 +1,11 @@
 import request from "../../services/requests";
 import React from "react";
 import MovieRow from "./MovieRow";
+import style from "./Movies.module.css";
 
 function Content() {
   return (
-    <div>
+    <div className={style.movies}>
       <MovieRow title="Trending now" fetchUrl={request.trending} />
       <MovieRow title="Comedies" fetchUrl={request.comedy} />
       <MovieRow title="Documentaries" fetchUrl={request.documentaries} />

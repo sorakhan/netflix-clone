@@ -2,17 +2,25 @@
   background-size: cover;
   object-fit: contain;
   height: 710px;
-  /* position: absolute; */
-  /* z-index: -1; */
-  /* top: 0; */
-  /* margin-top: 0; */
 }
 
 .banner__content {
-  padding-top: 15rem;
+  padding-top: 10rem;
   padding-left: 4rem;
+}
 
-  /* position: relative; */
+.banner__bottom {
+  margin-top: 4rem;
+  width: 100%;
+  height: 20%;
+  /* background-color: rgba(109, 109, 110, 0.5); */
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(20, 20, 20, 0.5888625713957458) 63%,
+    rgba(0, 0, 0, 0.01743399996717432) 100%
+  );
 }
 
 .banner__title {
