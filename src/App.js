@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Banner from "./components/Banner";
-import Movies from "./components/Movies";
+import Movies from "./components/movies/Movies";
 
 function App() {
   return (

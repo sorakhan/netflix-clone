@@ -3,6 +3,9 @@ import request from "../services/requests";
 import React, { useEffect, useState } from "react";
 import style from "./Banner.module.css";
 
+import PlayArrowIcon from "@material-ui/icons/PlayArrow";
+import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
+
 const baseURL = "https://image.tmdb.org/t/p/original/";
 
 function Banner() {
@@ -32,8 +35,14 @@ function Banner() {
         <h2 className={style.banner__title}>{movie.title}</h2>
         <p className={style.banner__blurb}>{truncate(movie.overview, 180)}</p>
         <div className={style.banner__buttons}>
-          <button className={style.button__play}>Play</button>
-          <button className={style.button__info}>More info</button>
+          <button className={style.button__play}>
+            <PlayArrowIcon className={style.button__icon} />
+            Play
+          </button>
+          <button className={style.button__info}>
+            <InfoOutlinedIcon className={style.button__icon} />
+            More info
+          </button>
         </div>
       </div>
       {/* Hugo photo at the back */}

@@ -1,0 +1,9 @@
+/* .movie {
+} */
+
+.movie__image {
+  width: 230px;
+  margin-right: 4px;
+  border-radius: 5px;
+  object-fit: contain;
+}

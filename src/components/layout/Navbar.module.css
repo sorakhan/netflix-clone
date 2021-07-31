@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #141414;
+  background: rgb(0, 0, 0);
   position: fixed;
   top: 0;
   height: 68px;
@@ -7,6 +7,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.navbar__transparent {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6308793781184349) 0%,
+    rgba(0, 0, 0, 0.3305030630416229) 59%,
+    rgba(0, 0, 0, 0.01743399996717432) 100%
+  );
 }
 
 .navbar__logo {
@@ -21,6 +32,14 @@
 
 .navbar__userControls {
   margin-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
 }
 
 ul li {

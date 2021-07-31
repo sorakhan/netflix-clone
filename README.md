@@ -5,9 +5,9 @@ Learning React JS.
 - https://www.themoviedb.org/
 
 - [x] Build the Navbar
-  - [ ] Complete Navbar with icons and everything
-  - [ ] Make Navbar slightly transparent
-    - [ ] Then make opaque on scroll
+  - [x] Complete Navbar with icons and everything
+  - [x] Make Navbar slightly transparent
+    - [x] Then make opaque on scroll
 - [x] Create Banner section
 - [x] Create Rows
   - [x] Get movies
@@ -16,7 +16,7 @@ Learning React JS.
 - [ ] Make hover transitions smooth
 - [ ] Add Top 10 section with numbers?
 - [ ] Hover movie preview
-- [ ] Install icons and add them where required
+- [x] Install icons and add them where required
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
