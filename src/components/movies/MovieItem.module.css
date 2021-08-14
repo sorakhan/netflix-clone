@@ -1,9 +1,39 @@
-/* .movie {
-} */
-
-.movie__image {
-  width: 230px;
+.movie {
   margin-right: 4px;
   border-radius: 5px;
-  object-fit: contain;
+  transition: transform 400ms;
+}
+
+.movie:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+  background-color: #141414;
+}
+
+.movie__image, .huge__image {
+  width: 230px;
+  border-radius: 5px;
+}
+
+.movie:hover .movie__image {
+  border-radius: 5px 5px 0 0;
+}
+
+.movie:hover .huge__image {
+  border-radius: 5px;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  margin-top: -130px;
+}
+
+.movie:hover .overlay {
+  display: block;
+}
+
+.movie:hover .movie__image .overlay {
+  display: block;
 }

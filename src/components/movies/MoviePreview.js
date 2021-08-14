@@ -4,7 +4,7 @@ import style from "./MoviePreview.module.css";
 function MoviePreview() {
   return (
     <div className={style.card}>
-      <div className={style.card__preview}></div>
+      {/* <div className={style.card__preview}></div> */}
       <div className={style.card__content}>
         <div className={style.card__icons}>
           <div className={style.icon}></div>

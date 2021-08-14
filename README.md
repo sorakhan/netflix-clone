@@ -15,7 +15,7 @@ Learning React JS.
   - [x] Display titles
 - [ ] Make hover transitions smooth
 - [ ] Add Top 10 section with numbers?
-- [ ] Hover movie preview
+- [x] Hover movie preview to be same as current Netflix 2021
 - [x] Install icons and add them where required
 - [x] Add banner bottom fade
 

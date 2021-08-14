@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "./MovieItem.module.css";
 import MoviePreview from "./MoviePreview";
 
-function MovieItem({ path, title }) {
+function MovieItem({ path, title, isExclusive }) {
   const [showPreview, setShowPreview] = useState(false);
 
   async function showHandler() {
@@ -19,10 +19,10 @@ function MovieItem({ path, title }) {
       onMouseEnter={showHandler}
       onMouseLeave={hideHandler}
     >
-      <img className={style.movie__image} src={path} alt={title} />
-      {showPreview && (
-        <MoviePreview />
-      )}
+      <img className={isExclusive ? style.huge__image : style.movie__image} src={path} alt={title} />
+      <div className={isExclusive ? style.overlay : null}>
+        {showPreview && <MoviePreview />}
+      </div>
     </div>
   );
 }
