@@ -18,8 +18,13 @@ Learning React JS.
 - [x] Hover movie preview to be same as current Netflix 2021
 - [x] Install icons and add them where required
 - [x] Add banner bottom fade
-- [ ] Add video trailer on hover
-- [ ] Fix bottom banner fade
+- [x] Add video trailer on hover
+  - [ ] Video trailers be unique
+  - [ ] Fix issue where multiple videos can play on hover if quickly hovering through various movies
+- [x] Fix bottom banner fade
+- [ ] Add shadow to non exclusive previews
+- [ ] Fix up preview icons and text
+  - [ ] Should be dynamic data
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
