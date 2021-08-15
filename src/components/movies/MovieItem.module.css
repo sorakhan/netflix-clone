@@ -5,7 +5,7 @@
 }
 
 .movie:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
   position: relative;
   z-index: 1;
   background-color: #141414;
@@ -14,6 +14,11 @@
 .movie__image, .huge__image {
   width: 230px;
   border-radius: 5px;
+}
+
+.huge__image {
+  object-fit: cover;
+  height: 380px;
 }
 
 .movie:hover .movie__image {
@@ -27,11 +32,12 @@
 .overlay {
   display: none;
   position: absolute;
-  margin-top: -130px;
+  bottom: 0px;
 }
 
 .movie:hover .overlay {
   display: block;
+  width: 100%;
 }
 
 .movie:hover .movie__image .overlay {

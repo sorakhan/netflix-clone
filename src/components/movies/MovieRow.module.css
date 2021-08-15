@@ -1,19 +1,18 @@
 .row,
 .row__big {
-  margin: -5vw 0;
+  /* margin: 1.5rem 0; */
   padding: 0 4%;
-  height: 260px;
+  height: 200px;
 }
 
 .row__big {
-  margin-bottom: 210px;
+  margin-bottom: 270px;
 }
 
 .row__title {
-  line-height: 1.3;
   font-size: 1.4vw;
   font-weight: 700;
-  margin-top: 20px;
+  margin: 10px 0;
   position: absolute;
 }
 
