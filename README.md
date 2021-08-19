@@ -35,6 +35,9 @@ The app is still a work-in-progress, but is mostly done.
 - [ ] Add shadow to non exclusive previews
 - [ ] Fix up preview icons and text
   - [ ] Should be dynamic data
+- [ ] Add slight overlay on top of banner for readable text
+- [ ] Add in move info when previewing an app
+- [ ] Make app mobile friendly
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
