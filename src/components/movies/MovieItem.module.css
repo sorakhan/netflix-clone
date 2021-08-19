@@ -31,7 +31,7 @@
 }
 
 .overlay {
-  display: none;
+  /* display: none; */
   position: absolute;
   bottom: 0px;
 }
@@ -39,8 +39,4 @@
 .movie:hover .overlay {
   display: block;
   width: 100%;
-}
-
-.movie:hover .movie__image .overlay {
-  display: block;
 }

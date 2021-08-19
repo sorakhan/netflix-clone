@@ -29,12 +29,12 @@ function MovieRow({ title, fetchUrl, isExclusive }) {
 
   return (
     <div className={`${isExclusive ? style.row__big : style.row}`}>
-        <h2 className={style.row__title}>{title}</h2>
+      <h2 className={style.row__title}>{title}</h2>
       <div className={style.row__posters}>
         {movies.map((movie) => (
           <MovieItem
             key={movie.id}
-            title={movie?.title || movie?.original_title}
+            title={movie?.title || movie?.original_title || movie?.name}
             isExclusive={isExclusive}
             path={`${baseURL}${getImagePath(movie)}`}
           />

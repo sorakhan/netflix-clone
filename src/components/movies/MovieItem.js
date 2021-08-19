@@ -2,23 +2,44 @@ import React, { useState } from "react";
 import style from "./MovieItem.module.css";
 import MoviePreview from "./MoviePreview";
 import YouTube from "react-youtube";
+import movieTrailer from "movie-trailer";
 
 function MovieItem({ path, title, isExclusive }) {
   const [showPreview, setShowPreview] = useState(false);
+  const [trailerUrl, setTrailerUrl] = useState("");
   const opts = {
     height: "130",
     width: "100%",
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
+      controls: 0,
+      disablekb: 1,
+      modestbranding: 1,
+      showInfo: 0,
+      autohide: 1,
     },
-    autohide: "1",
   };
 
   async function showHandler() {
-    setShowPreview(true);
+    if (trailerUrl) {
+      setTrailerUrl("");
+      setShowPreview(false);
+    } else {
+      movieTrailer(title || "")
+        .then((url) => {
+          if (url) {
+            console.log(url);
+            const urlParams = new URLSearchParams(new URL(url).search); // everything after ? in a url
+            setTrailerUrl(urlParams.get("v"));
+            setShowPreview(true);
+          }
+        })
+        .catch((error) => console.log(error));
+    }
   }
 
   async function hideHandler() {
+    setTrailerUrl("");
     setShowPreview(false);
   }
 
@@ -28,10 +49,9 @@ function MovieItem({ path, title, isExclusive }) {
       onMouseEnter={showHandler}
       onMouseLeave={hideHandler}
     >
-      {/* <img className={isExclusive ? style.huge__image : style.movie__image} src={path} alt={title} /> */}
       {showPreview ? (
         <YouTube
-          videoId="htqXL94Rza4"
+          videoId={trailerUrl}
           opts={opts}
           className={isExclusive ? style.huge__image : style.movie__image}
         />

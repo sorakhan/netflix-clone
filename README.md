@@ -19,8 +19,8 @@ Learning React JS.
 - [x] Install icons and add them where required
 - [x] Add banner bottom fade
 - [x] Add video trailer on hover
-  - [ ] Video trailers be unique
-  - [ ] Fix issue where multiple videos can play on hover if quickly hovering through various movies
+  - [x] Video trailers to be unique
+  - [x] Fix issue where multiple videos can play on hover if quickly hovering through various movies
 - [x] Fix bottom banner fade
 - [ ] Add shadow to non exclusive previews
 - [ ] Fix up preview icons and text
