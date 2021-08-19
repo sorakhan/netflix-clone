@@ -1,6 +1,16 @@
 # Netflix Clone
 
-Learning React JS.
+You can view this project live [here](https://app-netflix.netlify.app/).
+
+## About this Project
+
+This is a Netflix clone built using ReactJS for learning purposes. The intent is to get the front-facing part of the app as close to the current design as of 2021. 
+
+The app is still a work-in-progress, but is mostly done. 
+
+**Note:** None of the links are intended to work.
+
+## To Do
 
 - https://www.themoviedb.org/
 
