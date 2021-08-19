@@ -28,7 +28,6 @@ function MovieItem({ path, title, isExclusive }) {
       movieTrailer(title || "")
         .then((url) => {
           if (url) {
-            console.log(url);
             const urlParams = new URLSearchParams(new URL(url).search); // everything after ? in a url
             setTrailerUrl(urlParams.get("v"));
             setShowPreview(true);
