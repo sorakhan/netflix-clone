@@ -61,9 +61,9 @@ function MovieItem({ path, title, isExclusive }) {
           alt={title}
         />
       )}
-      <div className={isExclusive ? style.overlay : null}>
+      {/* <div className={isExclusive ? style.overlay : null}>
         {showPreview && <MoviePreview />}
-      </div>
+      </div> */}
     </div>
   );
 }
