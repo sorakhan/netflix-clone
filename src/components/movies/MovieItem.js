@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "./MovieItem.module.css";
-import MoviePreview from "./MoviePreview";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
